@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "target": "ES2017", // 元のまま残す
+
+    // ↓↓↓ ここから追加/修正 ↓↓↓
+    "baseUrl": ".", // プロジェクトのルートをベースパスに設定
+    "paths": {
+      "@/components/*": ["./components/*"], // ルート直下の components フォルダ
+      "@/hooks/*": ["./hooks/*"],         // ルート直下の hooks フォルダ
+      "@/services/*": ["./services/*"],     // ルート直下の services フォルダ
+      "@/theme": ["./theme.ts"],          // ルート直下の theme.ts ファイル
+      "@/*": ["./*"]                      // キャッチオールエイリアス（既存のものを保持しつつ明確化）
+    }
+    // ↑↑↑ ここまで追加/修正 ↑↑↑
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

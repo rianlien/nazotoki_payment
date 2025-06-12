@@ -1,0 +1,35 @@
+{
+  "name": "nazotoki_payment",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@coinbase/agentkit": "^0.1.2",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.15.20",
+    "@mui/material-nextjs": "^5.15.11",
+    "@tanstack/react-query": "^5.x.x",
+    "@wagmi/connectors": "^5.8.5",
+    "js-yaml": "^4.1.0",
+    "next": "^15.3.3",
+    "pino-pretty": "^13.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "viem": "^2.16.0",
+    "wagmi": "^2.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "^15.3.3",
+    "typescript": "^5"
+  }
+}
